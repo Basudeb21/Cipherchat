@@ -1,6 +1,5 @@
 package com.example.cipherchat.LoginModule
 
-import SignupScreen
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
@@ -104,17 +103,5 @@ class LoginScreen : Fragment() {
     }
 
     // Optional logout method if you need to log the user out
-    fun logoutUser() {
-        val sharedPref = requireActivity().getSharedPreferences("LoginPrefs", 0)
-        val editor = sharedPref.edit()
-        editor.clear()  // Clears all stored values
-        editor.apply()
 
-        auth.signOut()
-
-        // Navigate back to login screen
-        parentFragmentManager.beginTransaction()
-            .replace(R.id.frame_layout, LoginScreen())
-            .commit()
-    }
 }

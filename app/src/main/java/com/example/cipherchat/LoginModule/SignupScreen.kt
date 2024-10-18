@@ -1,3 +1,5 @@
+package com.example.cipherchat.LoginModule
+
 import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
@@ -7,7 +9,6 @@ import android.view.ViewGroup
 import android.widget.*
 import androidx.fragment.app.Fragment
 import com.example.cipherchat.ApplicationModule.ApplicationActivities
-import com.example.cipherchat.LoginModule.LoginScreen
 import com.example.cipherchat.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase

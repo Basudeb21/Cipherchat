@@ -7,6 +7,9 @@
     <color name="primary">#FDF232</color>
     <color name="primary_text">#0A065C</color>
     <color name="link_text">#0000EE</color>
+    <color name="chat_card_bg">#FFF4EA</color>
+    <color name="chat_card_primary_txt">#091057</color>
+    <color name="chat_card_msg_txt">#384B70</color>
 
 
 
