@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -36,12 +37,24 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+
+    // Custom design
+    implementation(libs.circleimageview)
+
+    // Firebase
+    // Firebase BoM (Bill of Materials) to manage Firebase versions
+    implementation(platform(libs.firebase.bom))
+
+    // Firebase SDKs
+    implementation(libs.firebase.auth.ktx) // For Firebase Authentication
+    implementation(libs.firebase.database.ktx) // For Firebase Realtime Database
+
+    // Test Tools
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
